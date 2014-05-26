@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsSpace |<%=yield(:title)%></title>
+  <title>RailsSpace | <%=yield(:title)%></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
 <body>
 
 <div id="whole_page">
-  <div id="header">My Space</div>
+  <div id="header">My Blog</div>
   <div id="nav">
 <%= link_to_unless_current "Home" , {action: 'index', controller: 'site'} %> |
 <%= link_to_unless_current "About" , {action: 'about', controller: 'site'} %> |
